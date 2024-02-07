@@ -4,7 +4,6 @@ body{
    font-family: "Roboto",  sans-serif;
     margin: 0 auto;
     background-color: #FFFFFF;
-    padding:0;
     border: 1px solid #000;
     color: #434455;
     
@@ -18,7 +17,7 @@ ul{
     font-family: "Raleway", sans-serif;
         font-weight: 700;
         font-size: 18px;
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
@@ -32,16 +31,20 @@ span{
 }
 
 .links-nav {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: #2e2f42;
     text-decoration: none;
 }
 .links-nav:hover,
-.links-nav:active {
+.links-nav:active,
+.links-nav:focus {
     color: #404bbf;
+}
+.address{
+    font-style: normal;
 }
 .contacts {
     font-weight: 400;
@@ -65,16 +68,14 @@ span{
 
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-padding: 10px 50px 20px;
 }
 .button {
+    font-family: "Roboto", sans-serif;
     cursor: pointer;
-    border-radius: 4px;
-    padding: 16px 32px;
 font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -84,7 +85,7 @@ font-weight: 500;
 color: #fff;
     background: #4d5ae5;
     margin: 0 auto;
-    display: block
+
 }
 
 .button:hover,
@@ -96,8 +97,8 @@ color: #fff;
 
 .sec-title{
     font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
+        font-size: 36px;
+        line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         text-align: center;
@@ -141,22 +142,17 @@ color: #fff;
     background: #f4f4fd;
 }
 .sec-box{
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
         background: #fff;
-        padding: 0px 0px 32px 0px;
-        border-radius: 0 0 4px 4px;
-        width: 264px;
-            height: 380px;
+
 }
 .sec-card{
-    width: 360px;
-        height: 420px;
         background: #fff;
-        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        
 }
 .footer{
     background: #2e2f42;
 }
-.footer span{
+.span-footer{
     color: #f4f4fd;
 }
