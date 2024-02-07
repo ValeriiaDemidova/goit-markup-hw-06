@@ -129,7 +129,7 @@ color: #fff;
                
             }
 
-.list-titel{
+.list-title{
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -155,4 +155,9 @@ color: #fff;
 }
 .span-footer{
     color: #f4f4fd;
+}
+.footer-text{
+    line-height: 1.5;
+    color: #F4F4FD;
+    letter-spacing: 0.02em;
 }
