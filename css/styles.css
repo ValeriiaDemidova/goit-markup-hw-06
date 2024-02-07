@@ -3,22 +3,27 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    background-color: fcfcfc;
     color: #434455;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 2%;
-    background-color: #ffffff;
+    letter-spacing: 0.02em;
+    background-color: #fff;
 width: 1440px;
     height: 3300px;}
+
+    h1, h2, h3{
+        font-family: "Roboto", sans-serif;
+    }
+
+    ul{
+        list-style-type: none;
+        display: flex;
+    }
 
 .header{
 background: #fff;}
 
-.nav-menu{
-    list-style-type: none;
-    display: flex;
-}
+
 .logo{
         font-weight: 700;
         font-size: 18px;
@@ -73,20 +78,24 @@ color: #404bbf;
         text-align: center;
         color: #fff;
 
-            padding-left: 472;
-            padding-top: 188;
+
+         
 
 }
 .button{ 
     cursor: pointer;
-    border-radius: 4px;
-        padding: 16px 32px;
+
+
         width: 169px;
         height: 56px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
         background: #4d5ae5;
         margin: 0 auto;
         display:block
+}
+.button:hover,
+.button:focus{
+    background: #404bbf;
 }
 
 /* section two */
@@ -120,10 +129,9 @@ h3{
 
 .sec-two-list{
     list-style-type: none;
-    margin-left: 24;
-    margin-top: 120;
+
     padding: 0;
-  display: flex
+
 
 }
 .sec-two-list p{
@@ -151,17 +159,13 @@ width: 1440px;
 height: 732px;
 
 }
-.sec-three-list{
-display: flex;
-list-style-type: none;
 
-}
 .sec-three-box{
-    border-radius: 0 0 4px 4px;
+
         padding: 0px 0px 32px 0px;
         width: 264px;
         height: 380px;
-        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+       
             background: #fff;
 
 }
@@ -180,10 +184,7 @@ width: 1128px;
         text-align: center;
         color: #2e2f42;
 }
-.sec-four-list{
-    display: flex;
-    list-style-type: none;
-}
+
 .sec-four-box{
     background: #fff;
     width: 360px;
@@ -194,4 +195,15 @@ width: 1128px;
     width: 1440px;
         height: 312px;
         background: #2e2f42;
+}
+.footer span{
+    color: #f4f4fd;
+}
+.footer-text{
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4fd;
 }
