@@ -46,9 +46,6 @@ img {
 padding: 120px 0;
 }
 
-header{
-    display: block;
-}
 .page-header {
 border-bottom: 1px solid #e7e9fc;
 box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -67,7 +64,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 .header-menu{
     display: flex;
         gap: 40px;
-        padding-right: 332px;
+
 }
 
 
@@ -80,10 +77,11 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         text-transform: uppercase;
         color: #4d5ae5;
         text-decoration: none;
-        margin-right: 76px;
+      
 }
 span{
     color: #2e2f42;
+     margin-right: 76px; 
 }
 
 
@@ -289,7 +287,7 @@ max-width: 496px;
 
 .sec-three{
     background: #f4f4fd;
-    height: 732px;
+
 }
 .team-list{
     display: flex;
@@ -339,17 +337,18 @@ fill: #f4f4fd;
         background: #fff;
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.sec-card:hover {
 
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+}
+.sec-card:hover{ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 
-    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);}
+ .sec-card:hover .overlay{
+    transform: translateY(0);
 }
 .imgs-prtfl{
     position: relative;
     overflow: hidden;
-}
+} 
 .overlay{
     position: absolute;
         top: 0;
@@ -367,10 +366,7 @@ fill: #f4f4fd;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 padding: 40px 32px;
 }
-.imgs-prtfl:hover .overlay{
-    transform: translateY(0);
-   
-}
+
 .card-border{
         padding: 32px 16px;
             border: 1px solid #e7e9fc;
