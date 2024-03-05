@@ -470,6 +470,25 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscription-wrap">
+          <p class="footer-subscription-text">Subscribe</p>
+          <form class="subscription-form" name="subscription">
+            <label class="subscription-input-label">
+              <input
+                class="subscription-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-airplane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-open">
@@ -479,7 +498,7 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="zaklyk">Leave your contacts and we will call you back</p>
+        <p class="form-text">Leave your contacts and we will call you back</p>
         <form class="form">
           <div class="form-wraper">
             <label for="user-name" class="form-label">Name</label>
@@ -540,9 +559,9 @@
               required
             ></textarea>
           </div>
-          <div class="-box-wraper">
+          <div class="checkbox-wraper">
             <input
-              class="checkbox"
+              class="checkbox visually-hidden"
               type="checkbox"
               id="privacy-policy"
               name="privacy-policy"
@@ -550,8 +569,13 @@
               required
             />
             <label class="checkbox-label" for="privacy-policy"
+              ><span class="checkbox-span"
+                ><svg class="span-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use></svg></span
               >I accept the terms and conditions of the
-              <a href="privacy-policy-link">Privacy Policy</a></label
+              <a class="privacy-policy-link" href="privacy-policy-link"
+                >Privacy Policy</a
+              ></label
             >
           </div>
           <button class="btn-form" type="submit">Send</button>
