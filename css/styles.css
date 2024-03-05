@@ -549,6 +549,7 @@ span {
     letter-spacing: 0.04em;
     color: #ffffff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
 .subscribe-btn:hover,
@@ -569,10 +570,10 @@ span {
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     z-index: 999999999;
-
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibiliti 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 
 }
 
@@ -589,8 +590,9 @@ span {
     transform: translate(-50%, -50%);
     border-radius: 4px;
     width: 408px;
-
-    background-color: #fafafa;
+min-height: 584px;
+background: #fcfcfc;
+    
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     padding: 72px 24px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -617,6 +619,7 @@ span {
 .modal-close-btn:focus {
     background-color: #404BBF;
     border: #FFFFFF
+    fill: #ffffff;
 }
 
 .close-icon {
@@ -680,8 +683,8 @@ span {
     top: 50%;
    left: 16px;
     transform: translateY(-50%);
-    /* fill: #2e2f42;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .form-input:focus+.input-icons {
@@ -700,6 +703,8 @@ span {
     resize: none;
     padding: 8px 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: rgba(46, 47, 66, 0.4);
+    outline: transparent;
 }
 .form-textarea::placeholder{
 color: rgba(46, 47, 66, 0.4);
@@ -729,15 +734,18 @@ color: rgba(46, 47, 66, 0.4);
     align-items: center;
     border-radius: 2px;
         border: 1px solid rgba(46, 47, 66, 0.4);
-
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
         fill:transparent;
         margin-right: 8px;
+        width: 16px;
+        height: 16px;
 }
 .checkbox:checked + .checkbox-label
 .checkbox-span{
-background-color: #4D5AE5;
-fill: #FFFFFF;
+background-color: #404bbf;
+border: none;
+fill: #F4F4FD;
 border-color: #2E2F42;
 }
 .checkbox:focus +.checkbox-label .checkbox-span{
@@ -763,6 +771,8 @@ border-color: #2E2F42;
     margin-right: auto;
         margin-left: 95px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        line-height: 1.5;
+        letter-spacing: 0.04em;
 }
 .but-form:hover,
 .but-form:focus {
