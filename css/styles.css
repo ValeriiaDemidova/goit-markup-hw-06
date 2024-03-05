@@ -619,7 +619,11 @@ background: #fcfcfc;
 .modal-close-btn:focus {
     background-color: #404BBF;
     border: none;
-    fill: #ffffff;
+   
+}
+.modal-close-btn:hover .close-icon,
+.modal-close-btn:focus .close-icon{
+     fill: #ffffff;
 }
 
 .close-icon {
@@ -671,7 +675,7 @@ background: #fcfcfc;
 }
 
 .form-wraper {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .form-input-icons {
@@ -777,4 +781,5 @@ border-color: #2E2F42;
 .but-form:hover,
 .but-form:focus {
     background: #404bbf;
+  
 }
