@@ -618,7 +618,7 @@ background: #fcfcfc;
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     background-color: #404BBF;
-    border: #FFFFFF
+    border: none;
     fill: #ffffff;
 }
 
