@@ -420,11 +420,13 @@ span {
     background: #2e2f42;
     padding: 100px 0;
     display: flex;
+    margin: 0 auto;
 }
 
 .footer .container {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 .footer-inf {
@@ -452,6 +454,7 @@ span {
 .soc-footer {
     display: block;
     height: 80px;
+    margin-right: 80px;
 }
 
 .title-footer {
@@ -473,7 +476,7 @@ span {
     display: flex;
     gap: 16px;
     justify-content: center;
-    margin-right: 80px;
+
 
 }
 
@@ -522,6 +525,7 @@ span {
     letter-spacing: 0.04em;
     padding-left: 16px;
     color: #ffffff;
+ 
 }
 
 .subscription-input::placeholder {
