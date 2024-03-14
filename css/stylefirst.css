@@ -41,7 +41,9 @@ body {
 }
 
 @media screen and (min-width: 1158) {
-    .section: 120 0;
+    .section {
+        padding: 120 0;
+    }
 }
 
 .page-header {
