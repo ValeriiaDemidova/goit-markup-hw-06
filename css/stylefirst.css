@@ -688,7 +688,7 @@ span {
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/imgsmobileoptmz/Dark-bg.jpg);
+        url(../images/mobile/Dark-bg.jpg);
     margin-right: auto;
     margin-left: auto;
     background: #2e2f42;
@@ -741,7 +741,7 @@ span {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/imgsmobileoptmz/Dark-bg@2x.jpg);
+            url(../images/mobile/Dark-bg@2x.jpg);
 
     }
 
