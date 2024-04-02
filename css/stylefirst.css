@@ -184,7 +184,7 @@ span {
 @media screen and (min-width: 1158px) {
 
     .section {
-        padding: 120 0;
+        padding: 120px 0;
     }
 
     .container {
@@ -286,7 +286,8 @@ span {
 .mbl-nav-menu {
     display: inline-block;
     margin-top: 72px;
-    margin-bottom: 168px;
+    /* margin-bottom: auto; */
+
     min-width: 151px;
     margin-left: 0;
 
@@ -354,18 +355,21 @@ span {
 }
 
 .mob-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 24px;
-    right: 8px;
+    right: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    fill: #2e2f42;
     width: 24px;
     height: 24px;
-    background-color: transparent;
     padding: 0;
     line-height: 0;
-    border-radius: 100%;
-    fill: #e7e9fc;
-    stroke-width: 1px;
-    stroke: #2e2f42;
+
 }
 
 
@@ -687,8 +691,7 @@ span {
 .sec-one {
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url(../images/mobile/Dark-bg.jpg);
+            rgba(46, 47, 66, 0.7)), url(../images/mobile/Dark-bg.jpg);
     margin-right: auto;
     margin-left: auto;
     background: #2e2f42;
@@ -699,6 +702,18 @@ span {
     max-width: 320px;
     text-align: center;
     min-height: 432px;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+    .sec-one {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/mobile/Dark-bg@2x.jpg);
+
+    }
+
+
 }
 
 .sec-one-title {
@@ -736,17 +751,7 @@ span {
     ;
 }
 
-@media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
-    .sec-one {
-        background-image: linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/mobile/Dark-bg@2x.jpg);
 
-    }
-
-
-}
 
 @media only screen and (min-width: 768px) {
     .sec-one {
@@ -759,26 +764,17 @@ span {
     }
 }
 
-@media only screen and (min-resolution: 192dpi) and (max-width: 768px) {
+@media only screen and (min-resolution: 192dpi) {
     .sec-one {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/imgstablet/Dark-bg@2x.jpg);
         max-width: 768px;
-        padding: 112px 0;
+
     }
 
 
-}
-
-@media only screen and (min-resolution: 192dpi) and (max-width: 1157px) {
-    .sec-one {
-        background-image: linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/imgstablet/Dark-bg@2x.jpg);
-    }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -789,11 +785,23 @@ span {
             url(../images/imgsdesctop/people-office\ 1.jpg);
         padding: 188px 0;
         max-width: 1440px;
-        margin: 0 auto;
+        background-position: center;
     }
 }
 
-@media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
+@media only screen and (min-resolution: 192dpi) {
+    .sec-one {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/imgsdesctop/people-office\ 1@2x.jpg);
+        max-width: 1440px;
+    }
+}
+
+
+
+/* @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
     .sec-one {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
@@ -803,7 +811,7 @@ span {
         max-width: 1440px;
         margin: 0 auto;
     }
-}
+} */
 
 .sec-one-title {
 
@@ -1370,12 +1378,13 @@ span {
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
+        width: 584px;
     }
 
     .footer-inf {
         width: 264px;
         margin-right: 24px;
-        margin-left: 96px;
+        /* margin-left: 96px; */
 
     }
 
@@ -1400,7 +1409,7 @@ span {
     }
 
     .footer-subscription-wrap {
-        margin-left: 96px;
+        /* margin-left: 96px; */
     }
 
     .footer-subscription-text {
@@ -1423,10 +1432,11 @@ span {
 
     }
 
-    .container .footer-container {
+    .footer-container {
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
+        width: 1158px;
     }
 
 
@@ -1434,7 +1444,7 @@ span {
 
     .footer-inf {
         margin-right: 120px;
-        margin-left: 0;
+        /* margin-left: 0; */
         margin-bottom: 0;
 
     }
@@ -1450,7 +1460,7 @@ span {
     }
 
     .footer-subscription-wrap {
-        margin-left: 0;
+        /* margin-left: 80px; */
     }
 
     .subscribe-btn {
