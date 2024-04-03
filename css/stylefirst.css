@@ -248,16 +248,25 @@ span {
 
 /* mobile modal */
 .mobile-menu {
-    background-color: #FFFFFF;
+    background: #fff;
+    padding: 72px 16px 40px;
     position: fixed;
-    z-index: 999999;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
     opacity: 0;
+    pointer-events: none;
     visibility: hidden;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -269,38 +278,76 @@ span {
 .is-open {
     opacity: 1;
     visibility: visible;
-
+    pointer-events: auto;
 }
 
 
-.container-mbl {
-    position: relative;
+.mob-btn {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+
 }
 
-/* 
-.mob-container {
-    margin: 72px 16px auto;
+.mbl-cls-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #2e2f42;
+}
 
+/* .container-mbl {
+    display: block;
 } */
 
 .mbl-nav-menu {
-    display: inline-block;
-    margin-top: 72px;
-    /* margin-bottom: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-bottom: auto;
+}
 
-    min-width: 151px;
-    margin-left: 0;
+.container-mbl {
+    position: relative;
+    height: 100%;
+}
+
+
+.mob-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
 }
 
+/* .container-mbl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+} */
+
 .mbl-nav-list {
-    margin-bottom: 40px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
     color: #2e2f42;
+    padding: 0;
+
 }
 
 
@@ -315,8 +362,6 @@ span {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
-    padding-bottom: 24px;
-    font-style: normal;
 }
 
 .contacts-mbl-active {
@@ -333,20 +378,26 @@ span {
     margin: 128px 16px auto;
 } */
 .mbl-adrs-menu {
-    display: block;
-    min-width: 193px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
     margin-bottom: 48px;
-    margin-left: 0;
 }
 
-.item-address-phone {
+/* .item-address-phone {
     margin-bottom: 24px;
-}
+} */
 
 .social-links-mbl {
+    width: 280px;
+    height: 40px;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     gap: 40px;
-    margin: 0 8px 40px 0;
+    margin-left: 0;
 }
 
 .mbl-list-elem {
@@ -354,29 +405,11 @@ span {
     height: 40px;
 }
 
-.mob-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    fill: #2e2f42;
-    width: 24px;
-    height: 24px;
-    padding: 0;
-    line-height: 0;
-
-}
 
 
 
-.mbl-cls-btn {
-    fill: #2E2F42;
-}
+
+
 
 .link-mbl {
     width: 100%;
@@ -701,16 +734,18 @@ span {
     background-position: center;
     max-width: 320px;
     text-align: center;
-    min-height: 432px;
+
 }
 
-@media only screen and (min-resolution: 192dpi) {
+@media (max-width: 767px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
     .sec-one {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/mobile/Dark-bg@2x.jpg);
-
+        /* max-width: 767px; */
     }
 
 
@@ -753,65 +788,7 @@ span {
 
 
 
-@media only screen and (min-width: 768px) {
-    .sec-one {
-        background-image: linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/imgstablet/Dark-bg.jpg);
-        max-width: 768px;
-        padding: 112px 0;
-    }
-}
 
-@media only screen and (min-resolution: 192dpi) {
-    .sec-one {
-        background-image: linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/imgstablet/Dark-bg@2x.jpg);
-        max-width: 768px;
-
-    }
-
-
-}
-
-@media only screen and (min-width: 1158px) {
-    .sec-one {
-        background-image: linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/imgsdesctop/people-office\ 1.jpg);
-        padding: 188px 0;
-        max-width: 1440px;
-        background-position: center;
-    }
-}
-
-@media only screen and (min-resolution: 192dpi) {
-    .sec-one {
-        background-image: linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/imgsdesctop/people-office\ 1@2x.jpg);
-        max-width: 1440px;
-    }
-}
-
-
-
-/* @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
-    .sec-one {
-        background-image: linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/imgsdesctop/people-office\ 1@2x.jpg);
-        padding: 188px 0;
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-} */
 
 .sec-one-title {
 
@@ -830,6 +807,30 @@ span {
 }
 
 @media screen and (min-width: 768px) {
+    .sec-one {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/imgstablet/Dark-bg.jpg);
+        max-width: 768px;
+        padding: 112px 0;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .sec-one {
+            background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/imgstablet/Dark-bg@2x.jpg);
+            max-width: 768px;
+
+        }
+
+
+    }
+
     .sec-one-title {
         max-width: 496px;
         font-size: 56px;
@@ -843,6 +844,30 @@ span {
 .button:hover,
 .button:focus {
     background: #404bbf;
+}
+
+@media only screen and (min-width: 1158px) {
+    .sec-one {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/imgsdesctop/people-office\ 1.jpg);
+        padding: 188px 0;
+        max-width: 1440px;
+        background-position: center;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .sec-one {
+            background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/imgsdesctop/people-office\ 1@2x.jpg);
+            max-width: 1440px;
+        }
+    }
 }
 
 /* sec-one */
